@@ -9,7 +9,7 @@
       <li><router-link to="/">Home</router-link></li>
       <li><router-link to="/contact">Contact</router-link></li>
       <li><router-link to="/Gallery">Gallery</router-link></li>
-      <li><a :href='ordertUrl'>Order</a></li>
+      <li><a :href='ordertUrl' target="_blank">Order</a></li>
     </ul>
   </nav>
 </template>

@@ -25,8 +25,8 @@ export default {
 <style>
 #app {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  /* background-image: url('https://images.unsplash.com/photo-1563207769-3343cb585fcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80'); */
-  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.952), rgba(25, 1, 1, 0.884)), url('/cih/images/bg.jpg');
+  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.952), rgba(15, 0, 0, 0.952)), url('https://images.unsplash.com/photo-1563207769-3343cb585fcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80');
+  /* background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.952), rgba(25, 1, 1, 0.884)), url('/cih/images/bg.jpg'); */
   /* background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.952), rgba(25, 1, 1, 0.884)), url('http://981x121.mars-t.mars-hosting.com/cih/images/bg.jpg'); */
   background-position: center; /* Center the image */
   background-size: cover; /* Resize the background image to cover the entire container */
