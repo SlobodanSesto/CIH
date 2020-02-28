@@ -17,11 +17,19 @@
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Phone</label>
+<<<<<<< HEAD
           <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Name</label>
           <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
+=======
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Name</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+>>>>>>> 50480c6912f9145215f5722d5cacd9ed813cff7e
         </div>
         <div class="form-group">
           <label for="exampleFormControlSelect1">Example select</label>
