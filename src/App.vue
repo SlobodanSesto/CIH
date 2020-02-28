@@ -5,30 +5,34 @@
       <router-link to="/about">About</router-link>
     </div> -->
     <Nav class="myNav"></Nav>
-    <router-view class="main-container"></router-view>
+    <router-view class="main-view"></router-view>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Nav from './components/Nav'
+import Footer from './components/Footer'
 
 export default {
   components: {
-    Nav
+    Nav,
+    Footer
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  background-image: url('https://images.unsplash.com/photo-1563207769-3343cb585fcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80');
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  /* background-image: url('https://images.unsplash.com/photo-1563207769-3343cb585fcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80'); */
+  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.952), rgba(25, 1, 1, 0.884)), url('http://981x121.mars-t.mars-hosting.com/cih/images/bg.jpg');
   background-position: center; /* Center the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  /* text-align: center; */
+  color: #f3f3f3;
   min-width: 100vw;
   min-height: 100vh;
 }
@@ -37,11 +41,10 @@ export default {
   background: white;
 }
 
-.main-container {
+.main-view {
   padding-top: 20px;
-  background: rgba(255, 255, 255, 0.81);
+  /* background: rgba(34, 34, 34, 0.938); */
   min-width: 100vw;
-  min-height: 100vh;
 }
 
 /* #nav {
