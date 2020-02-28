@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar shadow">
-    <div>
+    <div class="logo-wrapper">
       <router-link to="/">
         <img class="cih-logo" src="https://clevelandinjectorhospital.simdif.com/images/public/sd_5dd492b2ccdbd.jpg?nocache=1576935971" alt="" >
       </router-link>
@@ -36,6 +36,7 @@ export default {
 
 .cih-logo{
   width: 100px;
+  position: relative;
 }
 
 .navbar ul{
@@ -47,8 +48,11 @@ export default {
 }
 
 .navbar a {
+  font-weight: 400;
+  font-size: 1.3em;
   margin: 15px;
   padding: 5px;
+  color: rgb(25, 25, 25);
   text-decoration: none;
 }
 
@@ -58,7 +62,10 @@ export default {
 }
 
 .navbar a.router-link-exact-active {
-  color: rgb(169, 169, 169);
+  color: rgb(164, 145, 145);
 }
 
+.logo-wrapper a:hover{
+  border: none;
+}
 </style>
