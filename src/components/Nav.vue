@@ -8,8 +8,9 @@
     <ul>
       <li><router-link to="/">Home</router-link></li>
       <li><router-link to="/contact">Contact</router-link></li>
-      <li><router-link to="/Gallery">Gallery</router-link></li>
-      <li><a :href='ordertUrl' target="_blank">Order</a></li>
+      <li><router-link to="/gallery">Gallery</router-link></li>
+      <li><router-link to="/order">Order</router-link></li>
+      <!-- <li><a :href='ordertUrl' target="_blank">Order</a></li> -->
     </ul>
   </nav>
 </template>
