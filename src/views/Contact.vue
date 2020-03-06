@@ -18,7 +18,7 @@
         <label for="email">Email address</label>
         <input type="email" class="form-control" id="email" placeholder="name@example.com" v-model="cEmail">
       </div>
-      <input type="hidden" name="_honeypot" @change="honeypot" v-model="cHoneypot">
+      <input type="hidden" name="_honeypot" v-model="cHoneypot">
       <div class="form-group">
         <label for="phone">Phone</label>
         <input type="text" class="form-control" id="phone" placeholder="555-555-5555" v-model="cPhone">
@@ -45,6 +45,8 @@
 </template>
 
 <script>
+import api from '../api/index';
+
 export default {
   name: 'Contact',
   data() {
@@ -61,16 +63,23 @@ export default {
       console.log('honeypot val changed')
     },
     submitForm() {
-      let msg = this.validateInput();
+      let msg = this.validateInput()
       if(msg) {
         console.log(msg)
+      } else {
+        let data = {
+          honeypot: this.cHoneypot,
+          email: this.cEmail,
+          name: this.cName,
+          phone: this.cPhone,
+          msg: this.cMsg
+        }
+        console.log(data)
+        api.contactForm(data).then(res => {
+          console.log(res)
+          this.resetForm()
+        })
       }
-      // console.log(this.cName)
-      // console.log(this.cHoneypot)
-      // console.log(this.cPhone)
-      // console.log(this.cEmail)
-      // console.log(this.cMsg)
-      // console.log('form submit!')
     },
     validateInput() {
       if(this.cName === '' || this.cPhone === '' || this.cEmail === '' || this.cMsg === '') {
@@ -81,6 +90,12 @@ export default {
         console.log("invalid email")
         return 'Invalid e-mail'
       }
+    },
+    resetForm() {
+      this.cEmail = '';
+      this.cName = '';
+      this.cPhone = '';
+      this.cMsg = '';
     }
   }
 }

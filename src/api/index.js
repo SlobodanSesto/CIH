@@ -4,5 +4,8 @@ export default {
     testing() {
         console.log(process.env.VUE_APP_API);
         return axios.get('/test');
+    },
+    contactForm(params) {
+        return axios.post('/contactForm', params);
     }
 }
